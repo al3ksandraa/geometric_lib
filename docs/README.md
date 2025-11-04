@@ -41,7 +41,10 @@ perimeter(6) # -> 24
 
 # Commit history
 ```bash
-82aa4db (HEAD -> main) wrote comments in square.py
+f1e1aa3 (HEAD -> main) fixed figure files and tests
+e554149 added tests.py
+f8c2a42 wrote readme.md in docs
+82aa4db wrote comments in square.py
 0445024 wrote comments in circle.py
 f747470 added rectangle.py with comments
 d078c8d (origin/main, origin/HEAD) L-03: Docs added
