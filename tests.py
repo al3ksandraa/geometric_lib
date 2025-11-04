@@ -14,8 +14,9 @@ class RectangleTestCase(unittest.TestCase):
         res = rectangle.area(10, 10)
         self.assertEqual(res, 100)
 
-    def test_error_area(self):
-        self.assertRaises(TypeError, rectangle.area(3.4, 5.6))
+    def test_negative_area(self):
+        res = rectangle.area(-4, 2)
+        self.assertEqual(res, 8)
 
     def test_zero_perimeter(self):
         res = rectangle.perimeter(10, 0)
@@ -25,8 +26,9 @@ class RectangleTestCase(unittest.TestCase):
         res = rectangle.perimeter(10, 10)
         self.assertEqual(res, 40)
 
-    def test_error_perimeter(self):
-        self.assertRaises(TypeError, rectangle.perimeter(3.4, 5.6))
+    def test_negative_perimeter(self):
+        res = rectangle.perimeter(-4, 2)
+        self.assertEqual(res, 12)
 
 class CircleTestCase(unittest.TestCase):
     def test_zero_area(self):
@@ -37,8 +39,9 @@ class CircleTestCase(unittest.TestCase):
         res = circle.area(10)
         self.assertEqual(res, 100 * math.pi)
 
-    def test_error_area(self):
-        self.assertRaises(TypeError, circle.area(3.4))
+    def test_negative_area(self):
+        res = circle.area(-10)
+        self.assertEqual(res, 100 * math.pi)
 
     def test_zero_perimeter(self):
         res = circle.perimeter(0)
@@ -48,8 +51,9 @@ class CircleTestCase(unittest.TestCase):
         res = circle.perimeter(10)
         self.assertEqual(res, 20 * math.pi)
 
-    def test_error_perimeter(self):
-        self.assertRaises(TypeError, circle.perimeter(3.4))
+    def test_negative_perimeter(self):
+        res = circle.perimeter(-10)
+        self.assertEqual(res, 20 * math.pi)
 
 
 class SquareTestCase(unittest.TestCase):
@@ -61,8 +65,9 @@ class SquareTestCase(unittest.TestCase):
         res = square.area(10)
         self.assertEqual(res, 100)
 
-    def test_error_area(self):
-        self.assertRaises(TypeError, square.area(3.4))
+    def test_negative_area(self):
+        res = square.area(-10)
+        self.assertEqual(res, 100)
 
     def test_zero_perimeter(self):
         res = square.perimeter(0)
@@ -72,5 +77,6 @@ class SquareTestCase(unittest.TestCase):
         res = square.perimeter(10)
         self.assertEqual(res, 40)
 
-    def test_error_perimeter(self):
-        self.assertRaises(TypeError, square.perimeter(3.4))
+    def test_negative_perimeter(self):
+        res = square.perimeter(-10)
+        self.assertEqual(res, 40)

@@ -9,7 +9,7 @@ def area(a, b):
             Возвращаемое значение:
                     a * b (int): площадь прямоугольника
     '''
-    return a * b
+    return abs(a * b)
 
 
 def perimeter(a, b):
@@ -23,4 +23,4 @@ def perimeter(a, b):
             Возвращаемое значение:
                     2 * (a + b) (int): периметр прямоугольника
     '''
-    return 2 * (a + b)
+    return 2 * (abs(a) + abs(b))
