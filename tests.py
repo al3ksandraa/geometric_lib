@@ -14,6 +14,10 @@ class RectangleTestCase(unittest.TestCase):
         res = rectangle.area(10, 10)
         self.assertEqual(res, 100)
 
+    def test_square_area2(self):
+        res = rectangle.area(10, 10)
+        self.assertEqual(res, 50)
+
     def test_negative_area(self):
         res = rectangle.area(-4, 2)
         self.assertEqual(res, 8)
